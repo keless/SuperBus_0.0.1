@@ -1,0 +1,40 @@
+    fluid_boxes = {
+      {
+        production_type = "input",
+        -- input-output  : boiler, mining-drill, generator
+        --pipe_picture = assembler2pipepictures(),
+        pipe_covers = invisible_pipecoverpictures(),
+        base_area = 10,
+        base_level = 1,
+        pipe_connections = {
+          { type="input", position = {1.5, 2} },
+          { type="input", position = {0.5, 2} },
+          { type="input", position = {-0.5, 2} },
+          { type="input", position = {-1.5, 2} },
+
+          { type="input", position = {2, 1.5} },
+          { type="input", position = {2, 0.5} },
+          { type="input", position = {2, -0.5} },
+          { type="input", position = {2, -1.5} },
+
+          { type="input", position = {-2, 1.5} },
+          { type="input", position = {-2, 0.5} },
+          { type="input", position = {-2, -0.5} },
+          { type="input", position = {-2, -1.5} },
+        },
+        {
+          production_type = "output",
+          -- input-output  : boiler, mining-drill, generator
+          --pipe_picture = assembler2pipepictures(),
+          pipe_covers = invisible_pipecoverpictures(),
+          pipe_connections = {
+            { type="derp", position = {1.5, -2} },
+            { type="output", position = {0.5, -2} },
+            { type="output", position = {-0.5, -2} },
+            { type="output", position = {-1.5, -2} },
+          },
+        },
+        --secondary_draw_orders = { north = -1 }
+      },
+      off_when_no_fluid_recipe = false
+    },

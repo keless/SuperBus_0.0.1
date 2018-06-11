@@ -1,0 +1,11 @@
+{
+	"name" : "SuperBus",
+	"version" : "0.0.1",
+	"title" : "SuperBus",
+	"author" : "keless",
+	"contact" : "keless@gmail.com",
+	"homepage" : "",
+	"factorio_version" : "0.16",
+	"dependencies" : ["base >= 0.16"],
+	"description" : "Adds a 4x4 building which acts as a stackable 4-lane conveyor, for use with a main bus. Additional recipe includes liquid transport"
+}
